@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Order Form</title>
+<title>TUGAS FORM 05 ZALITA KHANSA</title>
 <style>
     body {
         font-family: Arial, sans-serif;
-        background-color: #f8f8f8;
+        background-color: #f7f7f8;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        min-height: 90vh;
     }
 
     .form-container {
@@ -50,8 +50,7 @@
         font-family: Arial, sans-serif;
     }
 
-    /* biar font placeholder sama seperti teks biasa */
-    ::placeholder {
+    :placeholder {
         font-family: Arial, sans-serif;
         font-style: normal;
         color: #999;
@@ -119,35 +118,38 @@
     <h2>Order Form</h2>
 
     <label for="name">Name</label>
-    <input type="text" id="name" placeholder="John Doe">
+    <input type="text" id="name" placeholder="Alex Turner">
 
     <div class="row">
         <div style="flex:1;">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="john.doe@example.com">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="alexturnerganteng@gmail.com">
         </div>
         <div style="flex:1;">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="+1 (555) 123-4567">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="+62 898-9898-999">
         </div>
     </div>
 
-    <div class="section-title">Order Details</div>
+    <h3>Order Details</h3>
 
     <div class="row">
-        <div style="flex:1;">
-            <label for="product">Product</label>
-            <select id="product">
-                <option>Select a product</option>
-            </select>
-        </div>
+      <div style="">
+      <label for="product">Product</label>
+      <select id="product">
+      <option>Select a product</option>
+      <option>Skincare</option>
+      <option>Make up</option>
+      <option>Hair Oil</option>
+      </select>
+    </div>
         <div style="flex:1;">
             <label for="quantity">Quantity</label>
             <input type="number" id="quantity" value="1">
         </div>
     </div>
 
-    <label>Size</label>
+    <h3>Size</h3>
     <div class="checkbox-group">
         <label><input type="checkbox"> Small</label>
         <label><input type="checkbox"> Medium</label>
@@ -155,7 +157,7 @@
         <label><input type="checkbox"> XL</label>
     </div>
 
-    <label>Color</label>
+    <h3>Color</h3>
     <div class="checkbox-group">
         <label><input type="checkbox"> Red</label>
         <label><input type="checkbox"> Blue</label>
@@ -163,14 +165,17 @@
         <label><input type="checkbox"> Black</label>
     </div>
 
-    <label>Additional Comments</label>
+    <h3>Additional Comments</h3>
     <textarea placeholder="Enter any additional comments or instructions"></textarea>
 
-    <div class="section-title">Payment Details</div>
-
-    <label>Payment Method</label>
+    
+    <h3>Payment Details</h3>
+    <h5>Payment Method</h5>
     <select>
         <option>Select a payment method</option>
+        <option>BANK BRI</option>
+        <option>BANK MANDIRI</option>
+        <option>BANK BCA</option>
     </select>
 
     <div class="terms">
