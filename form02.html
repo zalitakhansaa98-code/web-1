@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM 02 ZALITA KHANSA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: left;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .row div {
+      flex: 1;
+    }
+
+    .tshirt {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 30px;
+      margin-top: 5px;
+    }
+
+    .tshirt label {
+      font-weight: normal;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .checkbox {
+      margin-top: 15px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Event Registration Form</h2>
+   
+    <p>Please fill out the form below to register for the event.</p>
+
+    <div class="row">
+      <div>
+      <label>First Name</label>
+      <input type="text" placeholder="Zalita">
+      </div>
+      <div>
+      <label>Last Name</label>
+      <input type="text" placeholder="Khansa">
+      </div>
+    </div>
+    <label>Email Address</label>
+    <input type="email" placeholder="zalitakhansaa98@gmail.com">
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="+62 899-9898-999">
+  <div class="row">
+      <div>
+        <label>Country</label>
+        <select>
+        <option>Select Country</option>
+        <option>Prancis</option>
+        <option>Swiss</option>
+        <option>Finlandia</option>
+        </select>
+      </div>
+      <div>
+        <label>Date of Birth</label>
+        <input type="date" placeholder="">
+    </div>
+    </div>
+
+    <label>T-Shirt Size</label>
+    <div class="tshirt">
+      <label><input type="checkbox" name="size"> Small</label>
+      <label><input type="checkbox" name="size"> Medium</label>
+      <label><input type="checkbox" name="size"> Large</label>
+      <label><input type="checkbox" name="size"> Extra Large</label>
+    </div>
+
+  <p>  <h3>Emergency Contact Information</h3> </p>
+   
+    <label>Emergency Contact Name</label>
+    <input type="text" placeholder="Alex Turner">
+
+    <label>Emergency Contact Phone Number</label>
+    <input type="tel" placeholder="+62 899-9898-888">
+
+    <div class="checkbox">
+      <label><input type="checkbox"> I agree to the terms and conditions of this event.</label>
+    </div>
+
+  <button>Register Now</button>
+  </div>
+</body>
+</html>
