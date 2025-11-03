@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORM 04 ZALITA KHANSA</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin: 0;
+  }
+
+  .container {
+    background: #fff;
+    width: 400px;
+    border-radius: 10px;
+    padding: 30px 35px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 14px;
+    color: #555;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="time"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  textarea::placeholder {
+    font-style: normal;
+    font-family: Arial, sans-serif;
+  }
+
+  textarea {
+    resize: none;
+    height: 60px;
+  }
+
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .row .field {
+    flex: 1;
+  }
+
+  .availability, .skills {
+    margin-top: 15px;
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 5px;
+  }
+
+  .checkbox-group label {
+    font-weight: normal;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  .time-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .agreement {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0069d9;
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Volunteer Sign Up Form</h2>
+    <p>Please fill out the following form to become a volunteer.</p>
+
+    <form>
+      <div class="row">
+        <div class="field">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter your first name" required>
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter your last name" required>
+        </div>
+      </div>
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email address" required>
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter your phone number" required>
+
+      <label>Date of Birth</label>
+      <input type="date" required>
+
+      <label>Preferred Volunteer Role</label>
+      <select required>
+        <option value="">Select your preferred volunteer role</option>
+        <option>educational volunteer</option>
+        <option>environmental volunteer</option>
+        <option>social and humanitarian volunteer
+</option>
+      </select>
+
+      <div class="availability">
+        <h2>Availability</h2>
+        <h3>Days Available</h3>
+        <p>Select the days you are available to volunteer.</p>
+        <div class="checkbox-group">
+          <label><input type="checkbox">Monday</label>
+          <label><input type="checkbox">Tuesday</label>
+          <label><input type="checkbox">Wednesday</label>
+          <label><input type="checkbox">Thursday</label>
+          <label><input type="checkbox">Friday</label>
+          <label><input type="checkbox">Saturday</label>
+          <label><input type="checkbox">Sunday</label>
+        </div>
+
+        <div class="time-row">
+          <div class="field">
+         <label>Available Start Time</label>
+          <input type="time" value="09:00">
+          </div>
+          <div class="field">
+          <label>Available End Time</label>
+          <input type="time" value="17:00">
+          </div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <h3>Skills and Interests</h3>
+        <label>Skills and Experience</label>
+        <textarea placeholder="Enter your skills and experience."></textarea>
+        <p>Please describe your skill and experience, if any, that would be relevant to the volunteer role.</p>
+        
+       <h3>Interests</h3>
+        <p>Select your Interests</p>
+        
+        <div class="checkbox-group">
+          <label><input type="checkbox">Animals</label>
+          <label><input type="checkbox">Children</label>
+          <label><input type="checkbox">Elderly</label>
+          <label><input type="checkbox">Environment</label>
+          <label><input type="checkbox">Health</label>
+          <label><input type="checkbox">Homelessness</label>
+          <label><input type="checkbox">Poverty</label>
+        </div>
+      </div>
+
+      <div class="agreement">
+        <label><input type="checkbox" required> I agree to the terms and conditions of the volunteer program.</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
