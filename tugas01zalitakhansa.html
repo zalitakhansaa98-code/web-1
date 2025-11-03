@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUGAS 01 ZALITA KHANSA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 25px;
+      font-weight: normal;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .input-group {
+      flex: 1;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 10px;
+      margin-bottom: 15px;
+    }
+
+    .checkbox-group label {
+      font-weight: normal;
+    }
+
+    .terms {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: #000;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Class Registration Form</h1>
+    <h3>Please fill out the form below to register for our class</h3>
+
+    <!-- NAME -->
+    <div class="input-row">
+      <div class="input-group">
+        <input type="text" id="firstName" placeholder="First Name">
+      </div>
+      <div class="input-group">
+        <input type="text" id="lastName" placeholder="Last Name">
+      </div>
+    </div>
+     <div class="input-row">
+      <div class="input-group">
+     <input type="email" id="email" placeholder="Email Address">
+      </div>
+      <div class="input-group">
+        <input type="tel" id="phone" placeholder="Phone Number">
+      </div>
+    </div>
+    
+    <label for="classLevel">Class Level</label>
+    <select id="classLevel">
+      <option>Select your class level</option>
+      <option>SD</option>
+      <option>SMP</option>
+      <option>SMA</option>
+    </select>
+    
+    <p style="font-size: 12px; margin-top: 5px;">Please choose the appropriate level for your experience</p>
+
+ <h2>Class Days</h2>
+    <p style="font-size: 12px; margin-top: -10px;">Please select the days you are available to attend class</p>
+    
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Monday</label>
+      <label><input type="checkbox"> Tuesday</label>
+      <label><input type="checkbox"> Wednesday</label>
+      <label><input type="checkbox"> Thursday</label>
+      <label><input type="checkbox"> Friday</label>
+      <label><input type="checkbox"> Saturday</label>
+    </div>
+
+    <div class="terms">
+      <label><input type="checkbox"> I agree to the terms and conditions of the class registration</label>
+    </div>
+    
+    <button type="submit">Register Now!</button>
+  </div>
+
+</body>
+</html>
